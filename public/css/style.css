@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 10%;
+    color: red;
+}
+
+
+.table {
+    width: 25%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+    
+}
+
+.jobs, .costs {
+   text-align: center;
+   width: 50%;
+   padding: 10px;
+   border: 1px solid black;
+   
+}
+
+form {
+    margin: 12px;
+}
+
+input {
+    /* text-align: center; */
+    font-size: large;
+    border-radius: 4px;
+}

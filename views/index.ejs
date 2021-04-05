@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quote App</title>
+</head>
+<body>
+    <header>
+        <h1>Current Quotes</h1>
+    </header>
+
+    <form action="/addQuote" method="POST">
+        <input type="text" placeholder="Job Description" name="jobDescription">
+        <input type="text" placeholder="Cost of Job" name="cost">
+        <input type="submit">
+    </form>
+
+        <table class="table">
+            <thead>
+                <tr class="headerRow">
+                    <th>Job</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0; i < info.length; i++) {%>
+                <tr class="bodyRow">
+                    <td class="jobs"><%= info[i].jobDescription %></td>
+                    <td class="costs"><%= info[i].cost %></td>
+                </tr>
+            <% } %>
+            </tbody>
+        </table>
+
+    <h3>Total Quotes: <%= info.length %></h3>
+</body>
+</html>

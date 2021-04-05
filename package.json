@@ -1,0 +1,20 @@
+{
+  "name": "quoteapp",
+  "version": "1.0.0",
+  "description": "CRUD app for proviing quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "env": "0.0.2",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongodb": "^3.6.5",
+    "node": "^15.12.0"
+  }
+}
